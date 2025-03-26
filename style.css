@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+html,
+body {
+  background-color: #f1f1f1;
+  color: black;
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+main {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+h1 {
+  font: 600 36px/1.2 "Raleway", sans-serif;
+  margin-top: 16px;
+}
+header p {
+  font-size: 15px;
+  font-weight: 400;
+}
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.category {
+  padding: 2px 8px;
+  background-color: black;
+  color: white;
+}
+.unselected {
+  padding: 0px 8px;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 12px;
+}
+.rounded {
+  border-radius: 100%;
+}
+
+article {
+  background-color: white;
+  margin: 16px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+article img {
+  width: 100%;
+}
+article button {
+  background-color: white;
+  padding: 12px 24px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.post-body p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.post-footer p {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+article button:hover {
+  background-color: gray;
+}
+.post-content {
+  padding: 0.15px 18px;
+}
+.post-header h2,
+h5 {
+  margin: 10px 0;
+}
+.post-header h2 {
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+time {
+  opacity: 0.6;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.card {
+  background-color: white;
+  margin: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 15px 0;
+  line-height: 24px;
+}
+.card div {
+  padding: 0.15px 16px;
+}
+
+.popular-posts,
+.tags {
+  background-color: white;
+  margin: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.popular-posts h4,
+.tags h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.popular-post-content {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1px solid #ccc;
+}
+
+.popular-posts-heading,
+.tags-heading {
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.popular-post-content span {
+  display: block;
+}
+
+.popular-post-content img {
+  width: 50px;
+  margin-right: 10px;
+}
+.popular-post-content-title {
+  font-size: 18px;
+}
+.popular-post-content-description {
+  margin-top: 10px;
+}
+.categories {
+  padding: 15px 16px;
+  line-height: 30px;
+}
+
+footer {
+  margin-top: 16px;
+  padding: 32px 16px;
+  background-color: #616161;
+  color: white;
+  height: 190px;
+}
+footer a {
+  color: white;
+}
+
+footer button {
+  padding: 12px 24px;
+  font-size: 13.3333px;
+  margin-bottom: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+footer button:first-child {
+  background-color: #444444;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+footer button:last-child {
+  background-color: black;
+  color: white;
+}
+
+footer button:last-child:hover {
+  background-color: gray;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 993px) {
+  .content {
+    flex-direction: row;
+  }
+  .articles-container {
+    width: 66.66666%;
+  }
+  .sidebar {
+    width: 33.33333%;
+  }
+}
